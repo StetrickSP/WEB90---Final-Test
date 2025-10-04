@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+*{
+    font-family: "Outfit", sans-serif;
+}
+
+html{
+    font-size: 70%;
+}
+
+@theme{
+    --color-primary: #E42B93;
+}
+
+/* reset the tailwindcss for the react markdown for creations */
+.reset-tw, .reset-tw *{ 
+    all: revert !important;
+}
+
+/* push the clerk checkout upfront */
+.cl-drawerRoot{
+    z-index: 10;
+}
